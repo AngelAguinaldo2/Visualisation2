@@ -34,10 +34,11 @@
                     "field": "sound_pressure_level_average",
                     "type": "quantitative",
                     "title": "Average Sound Pressure Observed",
-                    "scale": {"domain": [-50, 100]}
+                    "scale": {"domain": [50, 70]}
                 },
 
-                "color":{ "value":"red"}
+                "color":{ "value":"red"
+                }
             }
         }
     ]
