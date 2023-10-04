@@ -14,7 +14,13 @@ function incrementCounter(){
 }
 
 function toggleVisibility(){
-    
+    var chartImage = document.getElementById('chart1');
+
+    if(chartImage.style.display === "none"){
+        chartImage.style.display = "block";
+    } else{
+        chartImage.style.display = "none";
+    }
 }
 
 //script calls
