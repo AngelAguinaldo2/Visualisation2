@@ -13,6 +13,10 @@ function incrementCounter(){
     spanElement.setAttribute('numberOfClicks', count);
 }
 
+function toggleVisibility(){
+    
+}
+
 //script calls
 //adding event to button element 'incrementButton' -> increment counter called on click.
 document.getElementById('incrementButton').addEventListener('click',incrementCounter)
