@@ -1,0 +1,17 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 450,
+    "title": "Noise Observations in Victoria",
+    "layer":[
+        {
+            "data": {
+                "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/self-guided-walks.topojson",
+
+                "format": {"type": "topojson", "feature": "self-guided-walks"}
+            },
+            
+            "mark": {"type": "geoshape", "fill": "lightgray", "stroke":"red"}
+        }
+    ]
+}
