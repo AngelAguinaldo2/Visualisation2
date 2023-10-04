@@ -14,32 +14,18 @@
             "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.5}
 
         },
-        {
-            "data": {
-                "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/self-guided-walks.topojson",
-
-                "format": {"type": "topojson", "feature": "self-guided-walks"}
-            },
-            
-            "mark": {"type": "geoshape", "fill": "null", "stroke":"red"},
-            "transform":[{
-                "filter":{"field":"properties.name", "equal":"On the Waterfront"}
-            }]
-        },
-
-        {
-            "data": {
-                "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/self-guided-walks.topojson",
-
-                "format": {"type": "topojson", "feature": "self-guided-walks"}
-            },
-            
-            "mark": {"type": "geoshape", "fill": "null", "stroke":"blue"},
-            "transform":[{
-                "filter":{"field":"properties.name", "equal":"A Walk in the Park"}
-            }]
-        }
         
 
+        {
+            "data": {
+                "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/self-guided-walks.topojson",
+
+                "format": {"type": "topojson", "feature": "self-guided-walks"}
+            },
+            "mark": {"type": "geoshape", "fillOpacity":0.75, "stroke":"black", "strokeWidth":1},
+            "encoding": {
+                "color": {"field": "properties.name", "type": "nominal"}
+              }
+        }
     ]
 }
