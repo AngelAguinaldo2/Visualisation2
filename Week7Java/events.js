@@ -14,8 +14,7 @@ function incrementCounter(){
 }
 
 function toggleVisibility(){
-    var chartImage = document.getElementById('chart1');
-
+    var chartImage = document.getElementById("chart1");
     if(chartImage.style.display === "none"){
         chartImage.style.display = "block";
     } else{
@@ -25,4 +24,5 @@ function toggleVisibility(){
 
 //script calls
 //adding event to button element 'incrementButton' -> increment counter called on click.
-document.getElementById('incrementButton').addEventListener('click',incrementCounter)
+document.getElementById('incrementButton').addEventListener('click',incrementCounter);
+document.getElementById('chartToggle').addEventListener('click',toggleVisibility);
