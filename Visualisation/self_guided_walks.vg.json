@@ -30,11 +30,15 @@
 
         {
             "data": {
-                "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/bus-stops.json",
+                "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/street-names.json",
+                "format": {"type": "topojson", "feature": "street-names"}
 
-                "format": {"type": "topojson", "feature": "bus-stops"}
             },
-            "mark": {"type": "geoshape", "strokeWidth":0.1}
+            "mark": {"type": "text"},
+            "encoding": {"text":{"field":"properties.maplabel", "type": "nominal"}}
+
         }
+
+        
     ]
 }
