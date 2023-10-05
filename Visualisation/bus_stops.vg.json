@@ -22,7 +22,44 @@
 
                 "format": {"type": "topojson", "feature": "bus-stops"}
             },
-            "mark": {"type": "geoshape", "width":1, "color":"red", "tooltip":true}
+            "mark": {"type": "geoshape", "width":1, "color":"darkred"}
+        },
+
+
+        {
+            "data": {
+                "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Data/street-addresses-cleaned.json",
+                "format": {"type": "topojson", "feature": "csvjson"}
+
+            },
+
+            "transform": [{
+                "filter":{"field": "properties.str_name", "oneOf": ["Bourke Street", "Spring Street", "Collins Street", "Flinders Street", "Elizabeth Street"]}}
+                
+            ],
+
+              "encoding": {
+                "longitude": {
+                  "field": "properties.geo_point_2d.lon",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "properties.geo_point_2d.lat",
+                  "type": "quantitative"
+                }
+              },
+              "layer": [{
+                "mark": {
+                  "type": "text",
+                  "dy": -10,
+                  "fontSize":5
+                },
+                "encoding": {
+                  "text": {"field": "properties.str_name", "type": "nominal"}
+                }
+              }]
+
         }
+
     ]
 }

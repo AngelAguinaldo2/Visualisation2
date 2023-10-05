@@ -24,7 +24,8 @@
             },
             "mark": {"type": "geoshape", "fillOpacity":0.75, "stroke":"black", "strokeWidth":1},
             "encoding": {
-                "color": {"field": "properties.name", "type": "nominal"}
+                "color": {"field": "properties.name", "type": "nominal", "title":"Walks"},
+                "tooltip":{"field":"properties.name", "type": "nominal"}
               }
         },
 
@@ -36,7 +37,8 @@
             },
 
             "transform": [{
-                "filter":{"field": "properties.str_name", "oneOf": ["Bourke Street", "Spring Street"]}}
+                "filter":{"field": "properties.str_name", "oneOf": ["Bourke Street", "Spring Street", "Collins Street", 
+                "Flinders Street", "Elizabeth Street","Lonsdale Street", "Swanston Street", "Degraves Street"]}}
                 
             ],
 
