@@ -11,21 +11,30 @@
                 "format": {"type": "topojson", "feature": "road-corridors"}
 
             },
-            "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.5}
-
+            "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.7}
         },
-        
-
         {
             "data": {
                 "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/self-guided-walks.topojson",
 
                 "format": {"type": "topojson", "feature": "self-guided-walks"}
             },
+            
+
+            "params":[
+              {"name":"walks_highlight","select":{"type":"point","fields": ["properties.name"]},
+              "bind":"legend"}
+            ],
+
             "mark": {"type": "geoshape", "fillOpacity":0.75, "stroke":"black", "strokeWidth":1},
             "encoding": {
                 "color": {"field": "properties.name", "type": "nominal", "title":"Walks"},
-                "tooltip":{"field":"properties.name", "type": "nominal"}
+                "tooltip":[
+                  {"field":"properties.name", "type": "nominal", "title":"Name"}, 
+                  {"field":"properties.distance", "type":"quantitative", "title":"Distance (km)"},
+                  {"field":"properties.time", "type":"nominal", "title":"Time to Walk"}
+                ],
+                "opacity":{"condition":{"param": "walks_highlight", "value":1},"value":0}
               }
         },
 
