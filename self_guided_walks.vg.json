@@ -47,7 +47,8 @@
 
             "transform": [{
                 "filter":{"field": "properties.str_name", "oneOf": ["Bourke Street", "Spring Street", "Collins Street", 
-                "Flinders Street", "Elizabeth Street","Lonsdale Street", "Swanston Street", "Degraves Street"]}}
+                "Flinders Street", "Elizabeth Street","Lonsdale Street", "Swanston Street", "Degraves Street", "Clarendon Street", "Albert Street", 
+                "Exhibition Street", "Russell Street"]}}
                 
             ],
 
