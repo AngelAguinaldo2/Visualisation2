@@ -3,6 +3,7 @@
     "width": 800,
     "height": 450,
     "title": "Bus Stops in Melbourne",
+    "background":"#F3EFE0",
     "layer":[
 
         {

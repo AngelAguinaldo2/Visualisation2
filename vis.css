@@ -1,3 +1,15 @@
 /* For styling the visualisation */
+body{
+    background-color: #F3EFE0;
+}
 
+#walks{
+    align-self: center;
+}
+
+#bigTitle{
+    text-align: center;
+    font-size: 70px;
+    color: #182825;
+}
 
