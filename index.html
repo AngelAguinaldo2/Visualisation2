@@ -9,13 +9,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
     <script src="finalVisVega.js"></script>
+    <script src="events.js"></script>
 
     <link rel="stylesheet" href="vis.css">
     <title>Visualisation 2</title>
 </head>
 <body>
-    <h1 id="bigTitle">Walking Melbourne</h1>
+    <h1 id="bigTitle">WALKING MELBOURNE</h1>
 
+    <div class = "button_group">
+        <button onclick="walk_toggle()"> Self Guided Walks</button>
+        <button onclick="bus_toggle()"> Bus Stops</button>
+        
+    </div>
+    
     <div id="bus_stops">
     </div>
 

@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 800,
     "height": 800,
-    "title": "Self Guided Walks in Melbourne",
-    "background":"#F3EFE0",
+    "title": {"text": "Self Guided Walks in Melbourne", "fontSize":30},
+    "padding":{"left": 200},    
     "layer":[
 
         {

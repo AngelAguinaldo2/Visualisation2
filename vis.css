@@ -1,15 +1,40 @@
 /* For styling the visualisation */
 body{
-    background-color: #F3EFE0;
+    background-color: #FFFFFF;
 }
 
-#walks{
-    align-self: center;
-}
+.button_group button {
+    background-color: #F28F3B; /* Green background */
+    border: 1px solid #FFFFFF; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  .button_group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .button_group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .button_group button:hover {
+    background-color: #F2663B;
+  }
+  
 
 #bigTitle{
     text-align: center;
     font-size: 70px;
-    color: #182825;
+    color: #2978A0;
 }
 
+#walks{
+    display: none;
+}
