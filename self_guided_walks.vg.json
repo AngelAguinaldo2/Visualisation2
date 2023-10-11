@@ -3,7 +3,7 @@
     "width": 800,
     "height": 800,
     "title": {"text": "Self Guided Walks in Melbourne", "fontSize":30},
-    "padding":{"left": 200},    
+    "padding":{"left": 250},    
     "layer":[
 
         {

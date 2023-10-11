@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 800,
     "height": 800,
-    "title": "Bus Stops in Melbourne",
-    "padding":{"left": 200},
+    "title": {"text":"Bus Stops in Melbourne", "fontSize":30},
+    "padding":{"left": 250},
     "layer":[
 
         {
