@@ -42,3 +42,7 @@ body{
 #bus_stops{
     display: block;
 }
+
+#toggle_map{
+    margin-top: 80;
+}
