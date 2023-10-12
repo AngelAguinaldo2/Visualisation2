@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1000,
+    "height": 800,
+    "title": {"text":"Trees of Melbourne", "fontSize":30},
+    "padding":{"left": 150, "top": 40},
+    "layer":[
+
+        {
+            "data": {
+                "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/road-corridors.topojson",
+                "format": {"type": "topojson", "feature": "road-corridors"}
+
+            },
+            "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.5}
+
+        }
+
+
+    ]
+}
