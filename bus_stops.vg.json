@@ -68,12 +68,13 @@
 
               "format": {"type": "topojson", "feature": "PTV_METRO_BUS_ROUTE"}
           },
-          "mark": {"type": "geoshape", "width":1, "fill":null, "stroke":"#2978A0"},
+          "mark": {"type": "geoshape", "width":1, "filled":false, "strokeWidth":2},
           "encoding": {
             "color":{
-              "field": "properties.FIRSTSTNAM",
+              "field": "properties.ROUTE_ID",
               "type":"nominal",
               "title": "Bus Stops"
+              
             }
           }
       }

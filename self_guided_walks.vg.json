@@ -27,9 +27,14 @@
               "bind":"legend"}
             ],
 
-            "mark": {"type": "geoshape", "fillOpacity":0.75, "stroke":"black", "strokeWidth":1},
+            "mark": {"type": "geoshape", "filled":false, "strokeWidth":3},
             "encoding": {
-                "color": {"field": "properties.name", "type": "nominal", "title":"Walks"},
+                "color": {
+                  "field": "properties.name", 
+                  "type": "nominal", 
+                  "title":"Walks"
+                
+                },
                 "tooltip":[
                   {"field":"properties.name", "type": "nominal", "title":"Name"}, 
                   {"field":"properties.distance", "type":"quantitative", "title":"Distance (km)"},
