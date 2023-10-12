@@ -46,3 +46,11 @@ body{
 #toggle_map{
     margin-top: 80;
 }
+.walk_buttons{
+    display: none;
+}
+
+p{
+    font-size: 18px;
+    color: #182825;
+}

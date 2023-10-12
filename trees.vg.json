@@ -14,6 +14,30 @@
             },
             "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.5}
 
+        },
+
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Data/trees.csv"
+            },
+            "layer": [{
+                "mark": {
+                  "type": "point",
+                  "dy": -10,
+                  "fontSize":5
+                },
+                "encoding": {
+                    "longitude": {"field": "longitude", "type":
+                    "quantitative"},
+                    "latitude": {"field": "latitude", "type":
+                    "quantitative"},
+                    "size":{
+                        "value":10
+                    }
+                }
+              }]
+
+
         }
 
 

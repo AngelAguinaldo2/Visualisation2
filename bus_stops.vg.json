@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 1000,
     "height": 800,
-    "title": {"text":"Bus Stops", "fontSize":30},
+    "title": {"text":"Bus Stops with Bus Routes", "fontSize":30},
     "padding":{"left": 150, "top": 40},
     "layer":[
 
@@ -12,9 +12,32 @@
                 "format": {"type": "topojson", "feature": "road-corridors"}
 
             },
-            "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.5}
+            "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.30}
 
         },
+
+        {
+          "data": {
+              "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/PTV_METRO_BUS_ROUTE.json",
+
+              "format": {"type": "topojson", "feature": "PTV_METRO_BUS_ROUTE"}
+          },
+          "mark": {"type": "geoshape", "width":1, "filled":false, "strokeWidth":2},
+          "encoding": {
+            "color":{
+              "field": "properties.ROUTELONGN",
+              "type":"nominal",
+              "title": "Bus Stops"
+              
+            },
+
+            "tooltip":[
+              {"field":"properties.ROUTELONGN", "type": "nominal", "title":"Bus Route"}, 
+              {"field":"properties.OPERATOR", "type":"nominal", "title":"Operator"},
+              {"field":"properties.NUMOFSTOPS", "type":"quantitative", "title":"Number of Stops"}
+            ]
+          }
+      },
         
 
         {
@@ -23,7 +46,7 @@
 
                 "format": {"type": "topojson", "feature": "bus-stops"}
             },
-            "mark": {"type": "geoshape", "width":1, "color":"darkred"}
+            "mark": {"type": "geoshape", "width":2, "filled": true, "color":"#1D607E", "opacity":0.5}
         },
 
 
@@ -35,7 +58,9 @@
             },
 
             "transform": [{
-                "filter":{"field": "properties.str_name", "oneOf": ["Bourke Street", "Spring Street", "Collins Street", "Flinders Street", "Elizabeth Street"]}}
+              "filter":{"field": "properties.str_name", "oneOf": ["Bourke Street", "Spring Street", "Collins Street", 
+              "Flinders Street", "Elizabeth Street","Lonsdale Street", "Swanston Street", "Degraves Street", "Clarendon Street", "Albert Street", 
+              "Exhibition Street", "Russell Street"]}}
                 
             ],
 
@@ -53,31 +78,17 @@
                 "mark": {
                   "type": "text",
                   "dy": -10,
-                  "fontSize":5
+                  "fontSize":8,
+                  "fontWeight":"bold"
                 },
                 "encoding": {
                   "text": {"field": "properties.str_name", "type": "nominal"}
                 }
               }]
 
-        },
+        }
 
-        {
-          "data": {
-              "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/PTV_METRO_BUS_ROUTE.json",
-
-              "format": {"type": "topojson", "feature": "PTV_METRO_BUS_ROUTE"}
-          },
-          "mark": {"type": "geoshape", "width":1, "filled":false, "strokeWidth":2},
-          "encoding": {
-            "color":{
-              "field": "properties.ROUTE_ID",
-              "type":"nominal",
-              "title": "Bus Stops"
-              
-            }
-          }
-      }
+        
 
 
 
