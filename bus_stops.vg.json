@@ -22,6 +22,12 @@
 
               "format": {"type": "topojson", "feature": "PTV_METRO_BUS_ROUTE"}
           },
+
+          "params":[
+            {"name":"bus_highlight","select":{"type":"point","fields": ["properties.ROUTELONGN"]},
+            "bind":"legend"}
+          ],
+
           "mark": {"type": "geoshape", "width":1, "filled":false, "strokeWidth":2},
           "encoding": {
             "color":{
@@ -35,7 +41,9 @@
               {"field":"properties.ROUTELONGN", "type": "nominal", "title":"Bus Route"}, 
               {"field":"properties.OPERATOR", "type":"nominal", "title":"Operator"},
               {"field":"properties.NUMOFSTOPS", "type":"quantitative", "title":"Number of Stops"}
-            ]
+            ],
+
+            "opacity":{"condition":{"param": "bus_highlight", "value":1},"value":0}
           }
       },
         
