@@ -33,6 +33,7 @@ body{
     text-align: center;
     font-size: 70px;
     color: #182825;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #walks{
@@ -52,5 +53,7 @@ body{
 
 p{
     font-size: 18px;
-    color: #182825;
+    color: #1D607E;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }

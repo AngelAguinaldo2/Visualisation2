@@ -33,7 +33,7 @@
             "color":{
               "field": "properties.ROUTELONGN",
               "type":"nominal",
-              "title": "Bus Stops"
+              "title": "Bus Routes"
               
             },
 
