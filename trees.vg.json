@@ -14,12 +14,6 @@
             },
             "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.5}
 
-        },
-
-    
-
-
-
         }
 
 

@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 1000,
     "height": 800,
-    "title": {"text": "Self Guided Walks in Melbourne", "fontSize":30, "color":"#182825"},
-    "padding":{"left": 150, "top": 40},    
+    "title": {"text":"Melbourne Landmarks", "fontSize":30},
+    "padding":{"left": 150, "top": 40},
     "layer":[
 
         {
@@ -12,37 +12,23 @@
                 "format": {"type": "topojson", "feature": "road-corridors"}
 
             },
-            "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.3}
+            "mark": {"type": "geoshape", "fill": "null", "stroke":"grey", "opacity":0.5}
+
         },
+
         {
             "data": {
                 "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/self-guided-walks.topojson",
 
                 "format": {"type": "topojson", "feature": "self-guided-walks"}
             },
+
+
+            "mark": {"type": "geoshape", "filled":false, "strokeWidth":3, "opacity":0.3}
+
             
-
-            "params":[
-              {"name":"walks_highlight","select":{"type":"point","fields": ["properties.name"]},
-              "bind":"legend"}
-            ],
-
-            "mark": {"type": "geoshape", "filled":false, "strokeWidth":3},
-            "encoding": {
-                "color": {
-                  "field": "properties.name", 
-                  "type": "nominal", 
-                  "title":"Walks"
-                
-                },
-                "tooltip":[
-                  {"field":"properties.name", "type": "nominal", "title":"Name"}, 
-                  {"field":"properties.distance", "type":"quantitative", "title":"Distance (km)"},
-                  {"field":"properties.time", "type":"nominal", "title":"Time to Walk"}
-                ],
-                "opacity":{"condition":{"param": "walks_highlight", "value":1},"value":0}
-              }
         },
+
 
         {
             "data": {
@@ -81,20 +67,45 @@
 
         },
         {
-          "data": {
-              "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/landmarks.json",
-              "format": {"type": "topojson", "feature": "landmarks-and-places-of-interest-including-schools-theatres-health-services-spor"}
+            "data": {
+                "url":"https://raw.githubusercontent.com/AngelAguinaldo2/Visualisation2/main/Maps/landmarks.json",
+                "format": {"type": "topojson", "feature": "landmarks-and-places-of-interest-including-schools-theatres-health-services-spor"}
 
-          },
-          "mark": {"type": "geoshape", "width":2, "filled": true, "opacity":0.25},
-          "transform": [{
-            "filter":{"field": "properties.theme", "oneOf": ["Leisure/Recreation", "Place of Worship","Retail",
-            "Place Of Assembly", "Purpose Built", "Community Use", "Transport","Mixed Use" ]}}
-            
-        ]
+            },
+            "mark": {"type": "geoshape", "width":2, "filled": true, "opacity":1},
 
-      }
+            "params":[
+                {"name":"landmarks_highlight","select":{"type":"point","fields": ["properties.theme"]},
+                "bind":"legend"}
+              ],
 
-        
+            "transform": [{
+                "filter":{"field": "properties.theme", "oneOf": ["Leisure/Recreation", "Place of Worship","Retail",
+                "Place Of Assembly", "Purpose Built", "Community Use", "Transport","Mixed Use" ]}}
+                
+            ],
+
+            "encoding": {
+                "color":{
+                    "field":"properties.theme",
+                    "type":"nominal",
+                    "title":"Landmark Type",
+
+                    "scale":{
+                        "scheme":"dark2"
+                    }
+                },
+                "tooltip":[{"field":"properties.feature_nam", "type":"nominal", "title":"Name"},
+                {"field":"properties.theme", "type": "nominal", "title":"Type"}, 
+                {"field":"properties.sub_theme", "type":"nominal", "title":"Sub-type"}],
+
+                "opacity":{"condition":{"param": "landmarks_highlight", "value":1},"value":0}
+            }
+
+        }
+
+
+
+
     ]
 }
