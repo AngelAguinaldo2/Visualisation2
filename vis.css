@@ -1,6 +1,7 @@
 /* For styling the visualisation */
 body{
     background-color: #FFFFFF;
+
 }
 
 .button_group button {
@@ -46,6 +47,7 @@ body{
 
 #toggle_map{
     margin-top: 80;
+    background-color: none;
 }
 
 
