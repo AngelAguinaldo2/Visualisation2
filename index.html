@@ -52,40 +52,49 @@
 
         <button> Environment </button>
     </div>
-
-    <div class="walk_buttons">
-        <button> A Walk in the Park</button>
-        <button> Arcades and Lanes</button>
-        <button> Elegant Enclave</button>
-        <button> Melbourne Music Walk</button>
-        <button> On the Waterfront</button>
-        <button> Secret Gardens</button>
-        <button> Sports and Entertainment</button>
-        <button> The Cosmopolitan </button>
-
-    </div>
     
     <!-- Map view div  -->
     <div id="toggle_map">
     
     </div>
 
-    <div id = "walks_page"> 
-        <p>
-            <b>KEY SIGHTS:</b>
-            <br>
-            <br>
-            <b>1.</b> Town Hall
 
-
-            <br>
-            <br>
-            The <a href="https://whatson.melbourne.vic.gov.au/things-to-do/walks">Whatson Melbourne</a>
-            website has a lot of great information about the different tours and itineraries that can
-            be done in Melbourne.
+    <!-- self guided walks page  -->
+    <div id = "walks_page">
         
-        </p>
-
+        <!-- buttons to toggle information about the self guided walks -->
+        <div class="walk_buttons">
+            <button> A Walk in the Park</button>
+            <button> Arcades and Lanes</button>
+            <button> Elegant Enclave</button>
+            <button onclick="toggle_music_walk()"> Melbourne Music Walk</button>
+            <button> On the Waterfront</button>
+            <button> Secret Gardens</button>
+            <button> Sports and Entertainment</button>
+            <button> The Cosmopolitan </button>
+    
+        </div>
+        
+        <!-- Information about the different walks -->
+        <div id = "music_walk">
+            <p>
+                <b>KEY SIGHTS:</b>
+                <br>
+                <br>
+                <b>1.</b> Town Hall
+                <br>
+                <img src="images/townhall.jpg">
+                <br>
+                <br>
+                <b>2.</b> State Library Victoria
+                <br>
+                <br>
+                The <a href="https://whatson.melbourne.vic.gov.au/things-to-do/walks">Whatson Melbourne</a>
+                website has a lot of great information about the different tours and itineraries that can
+                be done in Melbourne.
+            </p>
+        </div>
+        
     </div>
     <div id = "bus_page"> 
         <p> Add some additional bus stops and routes info here. Pictures would be nice.</p>

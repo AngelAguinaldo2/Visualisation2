@@ -52,8 +52,43 @@ body{
 
 
 .walk_buttons{
-    display: none;
+    display: block;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+.walk_buttons button {
+    background-color: #C03436; /* Green background */
+    border: 1px solid #FFFFFF; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+
+    
+  }
+  
+.walk_buttons button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+.walk_buttons:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+.walk_buttons button:hover {
+    background-color: #A63446;
+  }
+  
+
+
+
+
 
 p{
     font-size: 18px;
@@ -67,5 +102,8 @@ p{
     display: none;
 }
 #landmarks_page{
+    display: none;
+}
+#music_walk{
     display: none;
 }
