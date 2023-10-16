@@ -28,7 +28,10 @@ body{
   .button_group button:hover {
     background-color: #F2663B;
   }
-  
+.button_group{
+    padding-left: 80px;
+    padding-right: 80px;
+}
 
 #bigTitle{
     text-align: center;
@@ -84,7 +87,6 @@ body{
 .walk_buttons button:hover {
     background-color: #A63446;
   }
-  
 
 
 
@@ -94,12 +96,24 @@ p{
     font-size: 18px;
     color: #1D607E;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:justify;
 
+}
 
+p:after {/* this adds an extra invisible line, so any other line is justified */
+    content:'';
+    display:inline-block;
+    width:100%;
+    vertical-align:top;
 }
 
 b{
     color: #0B415A;
+}
+
+#walks_page{
+    padding-left: 80px;
+    padding-right: 80px;
 }
 #bus_page{
     display: none;
@@ -112,4 +126,12 @@ b{
 }
 #park_walk{
     display: block;
+}
+
+#arcades_walk{
+    display: none;
+}
+
+#topDiv{
+    padding: 30px 80px 10px 80px;
 }

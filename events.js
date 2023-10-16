@@ -58,6 +58,8 @@ function toggle_music_walk(){
     musicwalk.style.display = "block";
     var parkwalk = document.getElementById("park_walk");
     parkwalk.style.display = "none";
+    var arcadeswalk = document.getElementById("arcades_walk");
+    arcadeswalk.style.display = "none";
 }
 
 function toggle_park_walk(){
@@ -66,4 +68,17 @@ function toggle_park_walk(){
 
     var musicwalk = document.getElementById("music_walk");
     musicwalk.style.display = "none";
+    var arcadeswalk = document.getElementById("arcades_walk");
+    arcadeswalk.style.display = "none";
+}
+
+function toggle_arcades_walk(){
+    var parkwalk = document.getElementById("park_walk");
+    parkwalk.style.display = "none";
+
+    var musicwalk = document.getElementById("music_walk");
+    musicwalk.style.display = "none";
+
+    var arcadeswalk = document.getElementById("arcades_walk");
+    arcadeswalk.style.display = "block";
 }
