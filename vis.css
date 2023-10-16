@@ -98,6 +98,9 @@ p{
 
 }
 
+b{
+    color: #0B415A;
+}
 #bus_page{
     display: none;
 }
@@ -106,4 +109,7 @@ p{
 }
 #music_walk{
     display: none;
+}
+#park_walk{
+    display: block;
 }

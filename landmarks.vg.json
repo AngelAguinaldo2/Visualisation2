@@ -27,7 +27,7 @@
             "mark": {"type": "geoshape", "filled":false, "strokeWidth":3, "opacity":0.75},
 
             "transform": [{
-                "filter":{"field": "properties.name", "oneOf": ["Melbourne Music Walk"]}}
+                "filter":{"field": "properties.name", "oneOf": ["A Walk in the Park"]}}
                 
             ]
 

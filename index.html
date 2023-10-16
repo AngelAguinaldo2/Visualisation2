@@ -33,9 +33,14 @@
             When exploring a new city, it is often a good idea to join a walking tour to take you through the many famous 
             sights and local haunts. Self guided walking tours provide the same benefits, with the added extra bonus of 
             setting your own pace. Allowing the freedom to greater explore the places on the route and discover hidden gems.
-            The purpose of this visualisation is to facillitate the exploration of Melbourne by providing data on walking trails,
+            <b> The purpose of this visualisation is to facillitate the exploration of Melbourne</b> by providing data on walking trails,
             bus stops and routes, landmarks, and interesting environmental details strewn across the city centre. 
             <br>
+            <br>
+            <br>
+            The <a href="https://whatson.melbourne.vic.gov.au/things-to-do/walks">Whatson Melbourne</a>
+            website has a lot of great information about the different <b>tours</b> and <b>itineraries</b> that can
+            be done in Melbourne.
             <br>
             <br>
         </p>
@@ -64,7 +69,7 @@
         
         <!-- buttons to toggle information about the self guided walks -->
         <div class="walk_buttons">
-            <button> A Walk in the Park</button>
+            <button onclick="toggle_park_walk()"> A Walk in the Park</button>
             <button> Arcades and Lanes</button>
             <button> Elegant Enclave</button>
             <button onclick="toggle_music_walk()"> Melbourne Music Walk</button>
@@ -78,24 +83,115 @@
         <!-- Information about the different walks -->
         <div id = "music_walk">
             <p>
-                <b>KEY SIGHTS:</b>
+                <b>MUSIC WALK KEY SIGHTS:</b>
                 <br>
                 <br>
                 <b>1.</b> Town Hall
                 <br>
-                <img src="images/townhall.jpg">
+
+                <a title="denisbin via flickr" 
+                href="https://www.flickr.com/photos/82134796@N03/50689928916/in/photostream/">
+                <img width="512" alt="Town Hall 2020" 
+                src="images/townhall.jpg">
+                </a>
+
+
                 <br>
                 <br>
                 <b>2.</b> State Library Victoria
                 <br>
+                <a title="Alison Newman, CC0, via Wikimedia Commons" 
+                href="https://commons.wikimedia.org/wiki/File:State_Library_of_Victoria_-_July_2021.jpg">
+                <img width="512" alt="State Library of Victoria - July 2021" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/State_Library_of_Victoria_-_July_2021.jpg/512px-State_Library_of_Victoria_-_July_2021.jpg">
+                </a>
+
                 <br>
-                The <a href="https://whatson.melbourne.vic.gov.au/things-to-do/walks">Whatson Melbourne</a>
-                website has a lot of great information about the different tours and itineraries that can
-                be done in Melbourne.
+                <br>
+                <b>3.</b> Princess Theatre
+                <br>
+                
+                <a title="Donaldytong, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;,
+                via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Melbourne_Princess_Theatre_Feb_2013.jpg">
+                <img width="512" alt="Melbourne Princess Theatre Feb 2013" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Melbourne_Princess_Theatre_Feb_2013.jpg/512px-Melbourne_Princess_Theatre_Feb_2013.jpg">
+                </a>
+                <br>
+                <br>
+                <b>4.</b> Her Majesty's Theatre
+                <br>
+                <a title="Randy Escalada from Manila, Philippines, 
+                CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, 
+                via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:MissSaigon.jpg">
+                <img width="512" alt="MissSaigon" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/MissSaigon.jpg/512px-MissSaigon.jpg">
+                </a>
+            
+                <br>
+                <br>
+                
+            </p>
+        </div>
+
+        <div id = "park_walk">
+            <p>
+                <b>A WALK IN THE PARK KEY SIGHTS:</b>
+                <br>
+                <br>
+                <b>1.</b> St. Patrick's Cathedral
+                <br>
+                <a title="Donaldytong, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;,
+                via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:St_Patrick%27s_Cathedral_(Gothic_Revival_Style).jpg">
+                <img width="256" alt="St Patrick&#039;s Cathedral (Gothic Revival Style)" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/St_Patrick%27s_Cathedral_%28Gothic_Revival_Style%29.jpg/256px-St_Patrick%27s_Cathedral_%28Gothic_Revival_Style%29.jpg">
+                </a>
+
+                <br>
+                <br>
+                <b>2.</b> Fitzroy Gardens
+                <br>
+                <a title="The original uploader was Tirin at English Wikipedia., 
+                CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, 
+                via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Fitzroy_Gardens.jpg">
+                <img width="512" alt="Fitzroy Gardens" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Fitzroy_Gardens.jpg/512px-Fitzroy_Gardens.jpg">
+                </a>
+                <br>
+                <br>
+
+                <b>3.</b> Treasury Gardens 
+                <br>
+                <a title="SuperJew, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, 
+                via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Treasury_Gardens_02.jpg">
+                <img width="512" alt="Treasury Gardens 02" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Treasury_Gardens_02.jpg/512px-Treasury_Gardens_02.jpg">
+                </a>
+
+                <br>
+                <br>
+                <b>4.</b> ACMI
+                <br>
+                <a title="Bidgee, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, 
+                via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Australian_Centre_for_the_Moving_Image.jpg">
+                <img width="512" alt="Australian Centre for the Moving Image" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Australian_Centre_for_the_Moving_Image.jpg/512px-Australian_Centre_for_the_Moving_Image.jpg">
+                </a>
+                <br>
+                <br>
+                
             </p>
         </div>
         
     </div>
+
+
+
+
+
+
+
+
+
     <div id = "bus_page"> 
         <p> Add some additional bus stops and routes info here. Pictures would be nice.</p>
 

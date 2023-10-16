@@ -56,4 +56,14 @@ function landmarks_toggle(){
 function toggle_music_walk(){
     var musicwalk = document.getElementById("music_walk");
     musicwalk.style.display = "block";
+    var parkwalk = document.getElementById("park_walk");
+    parkwalk.style.display = "none";
+}
+
+function toggle_park_walk(){
+    var parkwalk = document.getElementById("park_walk");
+    parkwalk.style.display = "block";
+
+    var musicwalk = document.getElementById("music_walk");
+    musicwalk.style.display = "none";
 }
