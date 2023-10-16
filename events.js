@@ -60,6 +60,19 @@ function toggle_music_walk(){
     parkwalk.style.display = "none";
     var arcadeswalk = document.getElementById("arcades_walk");
     arcadeswalk.style.display = "none";
+    var enclavewalk = document.getElementById("enclave_walk");
+    enclavewalk.style.display = "none";
+    var waterfrontwalk = document.getElementById("waterfront_walk");
+    waterfrontwalk.style.display = "none";
+
+    var gardenswalk = document.getElementById("gardens_walk");
+    gardenswalk.style.display = "none";
+
+    var sportsswalk = document.getElementById("sports_walk");
+    sportsswalk.style.display = "none";
+
+    var cosmopolitanwalk = document.getElementById("cosmopolitan_walk");
+    cosmopolitanwalk.style.display = "none";
 }
 
 function toggle_park_walk(){
@@ -70,6 +83,20 @@ function toggle_park_walk(){
     musicwalk.style.display = "none";
     var arcadeswalk = document.getElementById("arcades_walk");
     arcadeswalk.style.display = "none";
+    var enclavewalk = document.getElementById("enclave_walk");
+    enclavewalk.style.display = "none";
+
+    var waterfrontwalk = document.getElementById("waterfront_walk");
+    waterfrontwalk.style.display = "none";
+
+    var gardenswalk = document.getElementById("gardens_walk");
+    gardenswalk.style.display = "none";
+
+    var sportsswalk = document.getElementById("sports_walk");
+    sportsswalk.style.display = "none";
+
+    var cosmopolitanwalk = document.getElementById("cosmopolitan_walk");
+    cosmopolitanwalk.style.display = "none";
 }
 
 function toggle_arcades_walk(){
@@ -81,4 +108,148 @@ function toggle_arcades_walk(){
 
     var arcadeswalk = document.getElementById("arcades_walk");
     arcadeswalk.style.display = "block";
+    var enclavewalk = document.getElementById("enclave_walk");
+    enclavewalk.style.display = "none";
+    var waterfrontwalk = document.getElementById("waterfront_walk");
+    waterfrontwalk.style.display = "none";
+
+    var gardenswalk = document.getElementById("gardens_walk");
+    gardenswalk.style.display = "none";
+
+    var sportsswalk = document.getElementById("sports_walk");
+    sportsswalk.style.display = "none";
+
+    var cosmopolitanwalk = document.getElementById("cosmopolitan_walk");
+    cosmopolitanwalk.style.display = "none";
+}
+
+function toggle_enclave_walk(){
+    var parkwalk = document.getElementById("park_walk");
+    parkwalk.style.display = "none";
+
+    var musicwalk = document.getElementById("music_walk");
+    musicwalk.style.display = "none";
+
+    var arcadeswalk = document.getElementById("arcades_walk");
+    arcadeswalk.style.display = "none";
+
+    var enclavewalk = document.getElementById("enclave_walk");
+    enclavewalk.style.display = "block";
+
+    var waterfrontwalk = document.getElementById("waterfront_walk");
+    waterfrontwalk.style.display = "none";
+
+    var gardenswalk = document.getElementById("gardens_walk");
+    gardenswalk.style.display = "none";
+
+    var sportsswalk = document.getElementById("sports_walk");
+    sportsswalk.style.display = "none";
+
+    var cosmopolitanwalk = document.getElementById("cosmopolitan_walk");
+    cosmopolitanwalk.style.display = "none";
+}
+
+function toggle_waterfront_walk(){
+    var waterfrontwalk = document.getElementById("waterfront_walk");
+    waterfrontwalk.style.display = "block";
+
+    var parkwalk = document.getElementById("park_walk");
+    parkwalk.style.display = "none";
+
+    var musicwalk = document.getElementById("music_walk");
+    musicwalk.style.display = "none";
+
+    var arcadeswalk = document.getElementById("arcades_walk");
+    arcadeswalk.style.display = "none";
+
+    var enclavewalk = document.getElementById("enclave_walk");
+    enclavewalk.style.display = "none";
+
+    var gardenswalk = document.getElementById("gardens_walk");
+    gardenswalk.style.display = "none";
+
+    var sportsswalk = document.getElementById("sports_walk");
+    sportsswalk.style.display = "none";
+
+    var cosmopolitanwalk = document.getElementById("cosmopolitan_walk");
+    cosmopolitanwalk.style.display = "none";
+}
+
+function toggle_gardens_walk(){
+    var waterfrontwalk = document.getElementById("waterfront_walk");
+    waterfrontwalk.style.display = "none";
+
+    var parkwalk = document.getElementById("park_walk");
+    parkwalk.style.display = "none";
+
+    var musicwalk = document.getElementById("music_walk");
+    musicwalk.style.display = "none";
+
+    var arcadeswalk = document.getElementById("arcades_walk");
+    arcadeswalk.style.display = "none";
+
+    var enclavewalk = document.getElementById("enclave_walk");
+    enclavewalk.style.display = "none";
+
+    var gardenswalk = document.getElementById("gardens_walk");
+    gardenswalk.style.display = "block";
+
+    var sportsswalk = document.getElementById("sports_walk");
+    sportsswalk.style.display = "none";
+
+    var cosmopolitanwalk = document.getElementById("cosmopolitan_walk");
+    cosmopolitanwalk.style.display = "none";
+
+}
+
+function toggle_sports_walk(){
+    var waterfrontwalk = document.getElementById("waterfront_walk");
+    waterfrontwalk.style.display = "none";
+
+    var parkwalk = document.getElementById("park_walk");
+    parkwalk.style.display = "none";
+
+    var musicwalk = document.getElementById("music_walk");
+    musicwalk.style.display = "none";
+
+    var arcadeswalk = document.getElementById("arcades_walk");
+    arcadeswalk.style.display = "none";
+
+    var enclavewalk = document.getElementById("enclave_walk");
+    enclavewalk.style.display = "none";
+
+    var gardenswalk = document.getElementById("gardens_walk");
+    gardenswalk.style.display = "none";
+
+    var cosmopolitanwalk = document.getElementById("cosmopolitan_walk");
+    cosmopolitanwalk.style.display = "none";
+
+    var sportsswalk = document.getElementById("sports_walk");
+    sportsswalk.style.display = "block";
+}
+
+function toggle_cosmopolitan_walk(){
+    var waterfrontwalk = document.getElementById("waterfront_walk");
+    waterfrontwalk.style.display = "none";
+
+    var parkwalk = document.getElementById("park_walk");
+    parkwalk.style.display = "none";
+
+    var musicwalk = document.getElementById("music_walk");
+    musicwalk.style.display = "none";
+
+    var arcadeswalk = document.getElementById("arcades_walk");
+    arcadeswalk.style.display = "none";
+
+    var enclavewalk = document.getElementById("enclave_walk");
+    enclavewalk.style.display = "none";
+
+    var gardenswalk = document.getElementById("gardens_walk");
+    gardenswalk.style.display = "none";
+
+    var sportsswalk = document.getElementById("sports_walk");
+    sportsswalk.style.display = "none";
+
+    var cosmopolitanwalk = document.getElementById("cosmopolitan_walk");
+    cosmopolitanwalk.style.display = "block";
 }

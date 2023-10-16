@@ -52,10 +52,10 @@
     <div class = "button_group">
         <button onclick="walk_toggle()" id = "mainWalkButton"> Self Guided Walks</button>
         <button onclick="landmarks_toggle()"> Landmarks</button>
-        <button onclick="bus_toggle()" id = "busStopButton"> Bus Stops</button>
+        <button onclick="bus_toggle()" id = "busStopButton"> Bus Routes</button>
         
 
-        <button> Environment </button>
+        <!-- <button> Environment </button> -->
     </div>
     
     <!-- Map view div  -->
@@ -71,12 +71,12 @@
         <div class="walk_buttons">
             <button onclick="toggle_park_walk()"> A Walk in the Park</button>
             <button onclick="toggle_arcades_walk()"> Arcades and Lanes</button>
-            <button> Elegant Enclave</button>
+            <button onclick="toggle_enclave_walk()"> Elegant Enclave</button>
             <button onclick="toggle_music_walk()"> Melbourne Music Walk</button>
-            <button> On the Waterfront</button>
-            <button> Secret Gardens</button>
-            <button> Sports and Entertainment</button>
-            <button> The Cosmopolitan </button>
+            <button onclick="toggle_waterfront_walk()"> On the Waterfront</button>
+            <button onclick="toggle_gardens_walk()"> Secret Gardens</button>
+            <button onclick="toggle_sports_walk()"> Sports and Entertainment</button>
+            <button onclick="toggle_cosmopolitan_walk()"> The Cosmopolitan </button>
     
         </div>
         
@@ -197,45 +197,288 @@
                 </a>
                 <br>
                 <br>
-                <b>2.</b> 
+                <b>2.</b> Presgrave Place
                 <br>
-    
+                <a title="Jacqui Szyrpallo via flickr" href="https://www.flickr.com/photos/152022817@N08/48670020316">
+                <img width="512" alt="Presgrave Place 2019" 
+                src="images/presgravePlace.jpg">
+                </a>
                 <br>
                 <br>
 
-                <b>3.</b>
+                <b>3.</b> The Block Arcade
                 <br>
+                <a title="a.canvas.of.light from Melbourne, Australia, CC BY 2.0 &lt;
+                https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" 
+                href="https://commons.wikimedia.org/wiki/File:Melbourne_Block_Arcade_2014.jpg">
+                <img width="512" alt="Melbourne Block Arcade 2014" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Melbourne_Block_Arcade_2014.jpg/512px-Melbourne_Block_Arcade_2014.jpg">
+                </a>
 
                 <br>
                 <br>
-                <b>4.</b> 
+                <b>4.</b> Royal Arcade
                 <br>
+                <a title="Diliff, CC BY-SA 2.5 &lt;https://creativecommons.org/licenses/by-sa/2.5&gt;, 
+                via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Royal_Arcade,_Melbourne,_Australia_-_April_2004.jpg">
+                <img width="512" alt="Royal Arcade, Melbourne, Australia - April 2004" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Royal_Arcade%2C_Melbourne%2C_Australia_-_April_2004.jpg/512px-Royal_Arcade%2C_Melbourne%2C_Australia_-_April_2004.jpg">
+                </a>
 
                 <br>
                 <br>
                 
             </p>
         </div>
+
+
+        <div id = "enclave_walk">
+            <p>
+                <b>ELEGANT ENCLAVE KEY SIGHTS:</b>
+                <br>
+                <br>
+                <b>1.</b> Forum Theatre
+                <br>
+                <a title="Dietmar Rabich / Wikimedia Commons / “Melbourne (AU), Forum Melbourne -- 2019 -- 1585” / CC BY-SA 4.0" 
+                href="https://commons.wikimedia.org/wiki/File:Melbourne_(AU),_Forum_Melbourne_--_2019_--_1585.jpg">
+                <img width="512" alt="Melbourne (AU), Forum Melbourne -- 2019 -- 1585" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Melbourne_%28AU%29%2C_Forum_Melbourne_--_2019_--_1585.jpg/512px-Melbourne_%28AU%29%2C_Forum_Melbourne_--_2019_--_1585.jpg">
+                </a>
+                <br>
+                <br>
+                <b>2.</b> St. Paul's Cathedral
+                <br>
+                <a title="Donaldytong, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;,
+                 via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:St._Paul%27s_Cathedral,_Melbourne.jpg">
+                 <img width="512" alt="St. Paul&#039;s Cathedral, Melbourne" 
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/St._Paul%27s_Cathedral%2C_Melbourne.jpg/512px-St._Paul%27s_Cathedral%2C_Melbourne.jpg">
+                </a>
+                <br>
+                <br>
+
+                <b>3.</b> National Gallery Australia (NGV)
+                <br>
+                <a title="I, Sailko, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:National_Gallery_of_Victoria_ext_01.JPG">
+                <img width="512" alt="National Gallery of Victoria ext 01" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/National_Gallery_of_Victoria_ext_01.JPG/512px-National_Gallery_of_Victoria_ext_01.JPG">
+                </a>
+
+                <br>
+                <br>
+                <b>4.</b> Federation Square
+                <br>
+                <a title="Tangerineduel, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Melbourne_Federation_Square_2017-10-10.jpg"><img width="512" 
+                alt="Melbourne Federation Square 2017-10-10" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Melbourne_Federation_Square_2017-10-10.jpg/512px-Melbourne_Federation_Square_2017-10-10.jpg">
+                </a>
+                <br>
+                <br>
+                
+            </p>
+        </div>
+
+        <div id = "waterfront_walk">
+            <p>
+                <b>WATERFRONT KEY SIGHTS:</b>
+                <br>
+                <br>
+                <b>1.</b> Melbourne Aquarium
+                <br>
+                <a title="Christopher Corneschi (Uncke Herb), CC BY-SA 3.0 &lt;
+                http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" 
+                href="https://commons.wikimedia.org/wiki/File:MelbourneAquariumEast.JPG"><img width="512" 
+                alt="MelbourneAquariumEast" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/MelbourneAquariumEast.JPG/512px-MelbourneAquariumEast.JPG">
+                </a>
+                <br>
+                <br>
+                <b>2.</b> Melbourne Exhibition Centre
+                <br>
+                <a title="Tirin at the English Wikipedia, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;,
+                 via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Melbourne_Exhibition_Centre.jpg">
+                 <img width="512" alt="Melbourne Exhibition Centre" 
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Melbourne_Exhibition_Centre.jpg/512px-Melbourne_Exhibition_Centre.jpg">
+                </a>
+                <br>
+                <br>
+
+                <b>3.</b> Immigration Museum
+                <br>
+                <a title="GordonMakryllos, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, 
+                via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Immigration_Museum,_Melbourne_-_Joy_of_Museums_-_External.jpg">
+                <img width="512" alt="Immigration Museum, Melbourne - Joy of Museums - External" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Immigration_Museum%2C_Melbourne_-_Joy_of_Museums_-_External.jpg/512px-Immigration_Museum%2C_Melbourne_-_Joy_of_Museums_-_External.jpg">
+                </a>
+
+                <br>
+                <br>
+                <b>4.</b> Webb Bridge
+                <br>
+                <a title="a.canvas.of.light from Melbourne, Australia, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" 
+                href="https://commons.wikimedia.org/wiki/File:Docklands_and_Webb_Bridge_(15396739824).jpg">
+                <img width="512" alt="Docklands and Webb Bridge (15396739824)" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Docklands_and_Webb_Bridge_%2815396739824%29.jpg/512px-Docklands_and_Webb_Bridge_%2815396739824%29.jpg">
+                </a>
+                <br>
+                <br>
+                
+            </p>
+        </div>
         
+        <div id = "gardens_walk">
+            <p>
+                <b>SECRET GARDENS KEY SIGHTS:</b>
+                <br>
+                <br>
+                <b>1.</b> Queen Victoria Gardens
+                <br>
+                <a title="Josh Parris at English Wikipedia, Public domain, via Wikimedia Commons" 
+                href="https://commons.wikimedia.org/wiki/File:Floral_Clock,_Queen_Victoria_Gardens,_Melbourne.JPG">
+                <img width="512" alt="Floral Clock, Queen Victoria Gardens, Melbourne" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Floral_Clock%2C_Queen_Victoria_Gardens%2C_Melbourne.JPG/512px-Floral_Clock%2C_Queen_Victoria_Gardens%2C_Melbourne.JPG">
+                </a>
+                <br>
+                <br>
+                <b>2.</b> Royal Botanic Gardens 
+                <br>
+                <a title="Neil Parley, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" 
+                href="https://commons.wikimedia.org/wiki/File:Royal_Botanic_Gardens,_Melbourne_-_panoramio_(6).jpg">
+                <img width="512" alt="Royal Botanic Gardens, Melbourne - panoramio (6)" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Royal_Botanic_Gardens%2C_Melbourne_-_panoramio_%286%29.jpg/512px-Royal_Botanic_Gardens%2C_Melbourne_-_panoramio_%286%29.jpg">
+                </a>
+                <br>
+                <br>
+
+                <b>3.</b> Shrine of remembrance
+                <br>
+                <a title="Neil Parley, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Royal_Botanic_Gardens,_Melbourne_-_panoramio_(6).jpg">
+                    <img width="512" alt="Royal Botanic Gardens, Melbourne - panoramio (6)" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Royal_Botanic_Gardens%2C_Melbourne_-_panoramio_%286%29.jpg/512px-Royal_Botanic_Gardens%2C_Melbourne_-_panoramio_%286%29.jpg">
+                </a>
+
+                <br>
+                <br>
+                <b>4.</b> Sydney Myer Music Bowl
+                <br>
+                <a title="Pfctdayelise, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, 
+                via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Kings_Domain_Melbourne_2009-06-20.JPG">
+                <img width="512" alt="Kings Domain Melbourne 2009-06-20" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kings_Domain_Melbourne_2009-06-20.JPG/512px-Kings_Domain_Melbourne_2009-06-20.JPG">
+                </a>
+                <br>
+                <br>
+                
+            </p>
+        </div>
+
+
+        <div id = "sports_walk">
+            <p>
+                <b>SPORTS & ENTERTAINMENT KEY SIGHTS:</b>
+                <br>
+                <br>
+                <b>1.</b> Rod Laver Arena
+                <br>
+                <a title="Gracchus250, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;,
+                 via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Rod_Laver_Arena_entrance_2023.jpg">
+                 <img width="256" alt="Rod Laver Arena entrance 2023" 
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Rod_Laver_Arena_entrance_2023.jpg/256px-Rod_Laver_Arena_entrance_2023.jpg">
+                </a>
+                <br>
+                <br>
+                <b>2.</b> Artplay
+                <br>
+                <a title="Johntorcasio, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;,
+                 via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:ArtPlay_-_Federation_Square.jpg">
+                 <img width="512" alt="ArtPlay - Federation Square" 
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/ArtPlay_-_Federation_Square.jpg/512px-ArtPlay_-_Federation_Square.jpg">
+                </a>
+                <br>
+                <br>
+
+                <b>3.</b> Westpac Centre
+                <br>
+                <a title="annieb, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;,
+                 via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Melbourne_Park_-_Tennis.jpg">
+                 <img width="512" alt="Melbourne Park - Tennis" 
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Melbourne_Park_-_Tennis.jpg/512px-Melbourne_Park_-_Tennis.jpg">
+                </a>
+
+                <br>
+                <br>
+                <b>4.</b> Hamer Hall
+                <br>
+                <a title="Jimmyjrg, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;,
+                 via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Hamer_Hall_from_Princes_Bridge.jpg">
+                 <img width="512" alt="Hamer Hall from Princes Bridge" 
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Hamer_Hall_from_Princes_Bridge.jpg/512px-Hamer_Hall_from_Princes_Bridge.jpg">
+                </a>
+                <br>
+                <br>
+                
+            </p>
+        </div>
+
+
+        <div id = "cosmopolitan_walk">
+            <p>
+                <b>COSMOPOLITAN KEY SIGHTS:</b>
+                <br>
+                <br>
+                <b>1.</b> Melbourne Comedy Theatre
+                <br>
+                <a title="Mike W. from Vancouver, Canada, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Comedy_Theatre_Melbourne_Victoria_Australia.jpg"><img width="512" 
+                    alt="Comedy Theatre Melbourne Victoria Australia" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Comedy_Theatre_Melbourne_Victoria_Australia.jpg/512px-Comedy_Theatre_Melbourne_Victoria_Australia.jpg">
+                </a>
+                <br>
+                <br>
+                <b>2.</b> Regent Theatre
+                <br>
+                <a title="gervo1865_2 - LJ Gervasoni, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;,
+                 via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Regent_Theatre,_Melbourne.jpg">
+                 <img width="512" alt="Regent Theatre, Melbourne" 
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Regent_Theatre%2C_Melbourne.jpg/512px-Regent_Theatre%2C_Melbourne.jpg">
+                </a>
+                <br>
+                <br>
+
+                <b>3.</b> Museum of Australian Chinese History
+                <br>
+                <a title="Joyofmuseums, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;,
+                 via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Chinese_Museum,_Melbourne_-_www.joyofmuseums.com_-_exterior_2.jpg">
+                 <img width="256" alt="Chinese Museum, Melbourne - www.joyofmuseums.com - exterior 2" 
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Chinese_Museum%2C_Melbourne_-_www.joyofmuseums.com_-_exterior_2.jpg/256px-Chinese_Museum%2C_Melbourne_-_www.joyofmuseums.com_-_exterior_2.jpg">
+                </a>
+
+                <br>
+                <br>
+                <b>4.</b> Melbourne Town Hall
+                <br>
+                <a title="The original uploader was Adz at English Wikipedia., CC BY-SA 3.0 &lt;
+                http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" 
+                href="https://commons.wikimedia.org/wiki/File:Melbourne_Town_Hall-Collins_Street.JPG">
+                <img width="512" alt="Melbourne Town Hall-Collins Street" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Melbourne_Town_Hall-Collins_Street.JPG/512px-Melbourne_Town_Hall-Collins_Street.JPG">
+                </a>
+                <br>
+                <br>
+                
+            </p>
+        </div>
+
+
     </div>
 
 
-
-
-
-
-
-
-
-    <div id = "bus_page"> 
-        <p> Add some additional bus stops and routes info here. Pictures would be nice.</p>
+    <!-- <div id = "bus_page"> 
+        <p> Add some additional bus stops and routes info here</p>
 
     </div>
 
     <div id = "landmarks_page"> 
-        <p> Add some additional landmarks info here. Pictures would be nice.</p>
+        <p> Add some additional landmarks info here.</p>
 
-    </div>
+    </div> -->
 
 </body>
 </html>

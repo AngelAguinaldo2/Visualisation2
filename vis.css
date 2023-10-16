@@ -132,6 +132,26 @@ b{
     display: none;
 }
 
+#enclave_walk{
+    display: none;
+}
+
+#waterfront_walk{
+    display: none;
+}
+
+#gardens_walk{
+    display: none;
+}
+#sports_walk{
+    display: none;
+}
+
+#cosmopolitan_walk{
+    display: none;
+}
+
+
 #topDiv{
     padding: 30px 80px 10px 80px;
 }
